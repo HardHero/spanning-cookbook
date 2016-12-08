@@ -1,0 +1,294 @@
+ec2-52-91-78-28.compute-1.amazonaws.com    Starting Chef Client, version 12.16.42[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    resolving cookbooks for run list: ["spanning-cookbook"][0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Synchronizing Cookbooks:[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      - spanning-cookbook (0.7.0)[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      - apache2 (3.2.2)[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Installing Cookbook Gems:[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Compiling Cookbooks...[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Converging 104 resources[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::default[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * apt_package[apache2] action install (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/etc/apache2/sites-available] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/etc/apache2/sites-enabled] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/etc/apache2/mods-available] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/etc/apache2/mods-enabled] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/etc/apache2/conf-available] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/etc/apache2/conf-enabled] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/etc/apache2/sites-enabled/default] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/sites-available/default] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/etc/apache2/sites-enabled/default.conf] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/sites-available/default.conf] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/etc/apache2/sites-enabled/000-default] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/sites-available/000-default] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/etc/apache2/sites-enabled/000-default.conf] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/sites-available/000-default.conf] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/etc/apache2/conf.d] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/var/log/apache2] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * apt_package[perl] action install (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/usr/sbin/a2ensite] action delete (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/usr/sbin/a2ensite] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/usr/sbin/a2dissite] action delete (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/usr/sbin/a2dissite] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/usr/sbin/a2enmod] action delete (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/usr/sbin/a2enmod] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/usr/sbin/a2dismod] action delete (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/usr/sbin/a2dismod] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/usr/sbin/a2enconf] action delete (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/usr/sbin/a2enconf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * link[/usr/sbin/a2disconf] action delete (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/usr/sbin/a2disconf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/etc/apache2/ssl] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/var/cache/apache2] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/var/lock/apache2] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/sysconfig/apache2] action create (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/envvars] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[apache2.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/conf-available/security] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/conf-available/security.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enconf security.conf] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/conf-available/charset] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/conf-available/charset.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enconf charset.conf] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/ports] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/ports.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mpm_event[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/mpm_prefork.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2dismod mpm_prefork] action run (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/mpm_worker.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2dismod mpm_worker] action run (skipped due to only_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/mpm_event.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/mpm_event.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod mpm_event] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_status[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/status.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/status.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod status] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_alias[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/alias.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/alias.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod alias] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_auth_basic[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/auth_basic.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod auth_basic] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_authn_core[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/authn_core.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod authn_core] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_authn_file[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/authn_file.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod authn_file] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_authz_core[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/authz_core.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod authz_core] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_authz_groupfile[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/authz_groupfile.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod authz_groupfile] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_authz_host[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/authz_host.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod authz_host] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_authz_user[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/authz_user.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod authz_user] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_autoindex[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/autoindex.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/autoindex.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod autoindex] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_deflate[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/deflate.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/deflate.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod deflate] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_dir[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/dir.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/dir.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod dir] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_env[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/env.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod env] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_mime[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/mime.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/mime.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod mime] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_negotiation[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/negotiation.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/negotiation.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod negotiation] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_setenvif[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/setenvif.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/setenvif.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod setenvif] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::default[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * service[apache2] action enable (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * service[apache2] action start (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_ssl[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[ssl_ports.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/mods-available/ssl.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/ssl.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod ssl] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: apache2::mod_socache_shmcb[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/mods-available/socache_shmcb.load] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enmod socache_shmcb] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com    Recipe: spanning-cookbook::default[0m
+ec2-52-91-78-28.compute-1.amazonaws.com      * file[/etc/apache2/conf-available/spanning] action delete (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/etc/apache2/conf-available/spanning.conf] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * execute[a2enconf spanning.conf] action run (skipped due to not_if)
+ec2-52-91-78-28.compute-1.amazonaws.com      * directory[/var/www/html/spanning/] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * template[/var/www/html/spanning/index.html] action create (up to date)
+ec2-52-91-78-28.compute-1.amazonaws.com      * service[apache2] action restart
+ec2-52-91-78-28.compute-1.amazonaws.com        [32m- restart service service[apache2][0m
+ec2-52-91-78-28.compute-1.amazonaws.com    [0m[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Running handlers:[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Running handlers complete
+ec2-52-91-78-28.compute-1.amazonaws.com    [0m[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Deprecated features used![0m
+ec2-52-91-78-28.compute-1.amazonaws.com      Cloning resource attributes for service[apache2] from prior resource (CHEF-3694)
+ec2-52-91-78-28.compute-1.amazonaws.com    [0mPrevious service[apache2]: /var/chef/cache/cookbooks/apache2/recipes/default.rb:206:in `from_file'
+ec2-52-91-78-28.compute-1.amazonaws.com    [0mCurrent  service[apache2]: /var/chef/cache/cookbooks/spanning-cookbook/recipes/default.rb:27:in `from_file' at 1 location:[0m
+ec2-52-91-78-28.compute-1.amazonaws.com        - /var/chef/cache/cookbooks/spanning-cookbook/recipes/default.rb:27:in `from_file'[0m
+ec2-52-91-78-28.compute-1.amazonaws.com    [0m
+ec2-52-91-78-28.compute-1.amazonaws.com    Chef Client finished, 1/105 resources updated in 04 seconds[0m
+ec2-54-165-255-215.compute-1.amazonaws.com Starting Chef Client, version 12.16.42[0m
+ec2-54-165-255-215.compute-1.amazonaws.com resolving cookbooks for run list: ["spanning-cookbook"][0m
+ec2-54-165-255-215.compute-1.amazonaws.com Synchronizing Cookbooks:[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   - spanning-cookbook (0.7.0)[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   - apache2 (3.2.2)[0m
+ec2-54-165-255-215.compute-1.amazonaws.com Installing Cookbook Gems:[0m
+ec2-54-165-255-215.compute-1.amazonaws.com Compiling Cookbooks...[0m
+ec2-54-165-255-215.compute-1.amazonaws.com Converging 104 resources[0m
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::default[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * apt_package[apache2] action install (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/etc/apache2/sites-available] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/etc/apache2/sites-enabled] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/etc/apache2/mods-available] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/etc/apache2/mods-enabled] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/etc/apache2/conf-available] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/etc/apache2/conf-enabled] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/etc/apache2/sites-enabled/default] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/sites-available/default] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/etc/apache2/sites-enabled/default.conf] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/sites-available/default.conf] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/etc/apache2/sites-enabled/000-default] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/sites-available/000-default] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/etc/apache2/sites-enabled/000-default.conf] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/sites-available/000-default.conf] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/etc/apache2/conf.d] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/var/log/apache2] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * apt_package[perl] action install (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/usr/sbin/a2ensite] action delete (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/usr/sbin/a2ensite] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/usr/sbin/a2dissite] action delete (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/usr/sbin/a2dissite] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/usr/sbin/a2enmod] action delete (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/usr/sbin/a2enmod] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/usr/sbin/a2dismod] action delete (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/usr/sbin/a2dismod] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/usr/sbin/a2enconf] action delete (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/usr/sbin/a2enconf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * link[/usr/sbin/a2disconf] action delete (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/usr/sbin/a2disconf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/etc/apache2/ssl] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/var/cache/apache2] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/var/lock/apache2] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/sysconfig/apache2] action create (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/envvars] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[apache2.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/conf-available/security] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/conf-available/security.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enconf security.conf] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/conf-available/charset] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/conf-available/charset.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enconf charset.conf] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/ports] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/ports.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mpm_event[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/mpm_prefork.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2dismod mpm_prefork] action run (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/mpm_worker.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2dismod mpm_worker] action run (skipped due to only_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/mpm_event.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/mpm_event.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod mpm_event] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_status[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/status.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/status.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod status] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_alias[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/alias.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/alias.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod alias] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_auth_basic[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/auth_basic.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod auth_basic] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_authn_core[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/authn_core.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod authn_core] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_authn_file[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/authn_file.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod authn_file] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_authz_core[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/authz_core.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod authz_core] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_authz_groupfile[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/authz_groupfile.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod authz_groupfile] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_authz_host[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/authz_host.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod authz_host] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_authz_user[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/authz_user.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod authz_user] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_autoindex[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/autoindex.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/autoindex.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod autoindex] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_deflate[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/deflate.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/deflate.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod deflate] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_dir[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/dir.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/dir.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod dir] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_env[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/env.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod env] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_mime[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/mime.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/mime.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod mime] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_negotiation[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/negotiation.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/negotiation.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod negotiation] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_setenvif[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/setenvif.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/setenvif.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod setenvif] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::default[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * service[apache2] action enable (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * service[apache2] action start (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_ssl[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[ssl_ports.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/mods-available/ssl.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/ssl.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod ssl] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: apache2::mod_socache_shmcb[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/mods-available/socache_shmcb.load] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enmod socache_shmcb] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com Recipe: spanning-cookbook::default[0m
+ec2-54-165-255-215.compute-1.amazonaws.com   * file[/etc/apache2/conf-available/spanning] action delete (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/etc/apache2/conf-available/spanning.conf] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * execute[a2enconf spanning.conf] action run (skipped due to not_if)
+ec2-54-165-255-215.compute-1.amazonaws.com   * directory[/var/www/html/spanning/] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * template[/var/www/html/spanning/index.html] action create (up to date)
+ec2-54-165-255-215.compute-1.amazonaws.com   * service[apache2] action restart
+ec2-54-165-255-215.compute-1.amazonaws.com     [32m- restart service service[apache2][0m
+ec2-54-165-255-215.compute-1.amazonaws.com [0m[0m
+ec2-54-165-255-215.compute-1.amazonaws.com Running handlers:[0m
+ec2-54-165-255-215.compute-1.amazonaws.com Running handlers complete
+ec2-54-165-255-215.compute-1.amazonaws.com [0m[0m
+ec2-54-165-255-215.compute-1.amazonaws.com Deprecated features used![0m
+ec2-54-165-255-215.compute-1.amazonaws.com   Cloning resource attributes for service[apache2] from prior resource (CHEF-3694)
+ec2-54-165-255-215.compute-1.amazonaws.com [0mPrevious service[apache2]: /var/chef/cache/cookbooks/apache2/recipes/default.rb:206:in `from_file'
+ec2-54-165-255-215.compute-1.amazonaws.com [0mCurrent  service[apache2]: /var/chef/cache/cookbooks/spanning-cookbook/recipes/default.rb:27:in `from_file' at 1 location:[0m
+ec2-54-165-255-215.compute-1.amazonaws.com     - /var/chef/cache/cookbooks/spanning-cookbook/recipes/default.rb:27:in `from_file'[0m
+ec2-54-165-255-215.compute-1.amazonaws.com [0m
+ec2-54-165-255-215.compute-1.amazonaws.com Chef Client finished, 1/105 resources updated in 04 seconds[0m
